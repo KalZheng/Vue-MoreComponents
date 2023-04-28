@@ -8,14 +8,14 @@
       :info-text="activeUser.description"
       :role="activeUser.role"
     ></user-info>
-    <course-goals>
-      <template #default="slotProps">
+    <course-goals #default="slotProps">
+      <!-- here you can remove the tempalte 
+        because there is only default in it -->
         <h2>{{ slotProps.item }}</h2>
         <p>{{ slotProps.anotherProp }}</p>
         <p>{{ slotProps.camelProp }}</p>
         <!-- here can use camelCase 
           for access the - (dash) -->
-      </template>
     </course-goals>
   </div>
 </template>
