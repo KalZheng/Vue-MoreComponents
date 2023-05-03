@@ -1,4 +1,5 @@
 <template>
+    <!-- can remove div in vue 3 because of fragment  -->
   <div>
     <h2>Manage Gaols</h2>
     <input type="text" ref="goal" />
